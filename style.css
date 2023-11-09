@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+::-webkit-scrollbar {
+    width: .5rem;
+}
+::-webkit-scrollbar-track {
+    background-color: #ff84ff;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #194eb9;
+    border-radius: 2rem;
+}
+
+body {
+    background-color: rgb(15, 2, 23);
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    
+}
+
+header .navlist {
+    display: flex;
+}
+
+header ul li {
+    margin: 2rem;
+}
+
+header ul li a {
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: all .3 ease;
+}
+
+header ul li a:hover {
+    background-color: #ff84ff;
+    color: #fff;
+}
+
+header ul li a.active {
+    background-color: #ff84ff;
+    color: #fff;
+}
+
+.darkcity {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.darkcity h2 {
+    position: absolute;
+    text-align: center;
+    font-size: 5em;
+    line-height: .85;
+    font-weight: 800;
+    text-shadow: 6px 6px 4px #000;
+}
+
+.darkcity h2 span {
+    font-size: .40em;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img#purple,
+#moon {
+    mix-blend-mode: screen;
+}
+
+.underGround {
+    position: relative;
+    padding: 100px;
+    background-color: #000;
+}
+
+.underGround h2 {
+    font-size: 3em;
+    margin-top: 1rem;
+}
+
+.underGround p {
+    font-size: 1em;
+}
